@@ -8,11 +8,18 @@ import Button from '../../../compoment/button';
 import Seperator from '../../../compoment/Seperator';
 import GoogleLogin from '../../../compoment/GoogleLogin';
 
-const SignUp = () => {
+const SignUp = ({ navigation }) => {
+    const onSignIn = () => {
+        navigation.navigate('SignIn');
+    };
+
+    const onBack = () => {
+        navigation.goBack();
+    };
     const [checked, setChecked] = useState(false);
     return (
         <View style={styles.container}>
-            <AuthHeader title="Sign Up"></AuthHeader>
+            <AuthHeader title="Sign Up" onBackPress={onBack}></AuthHeader>
             <Input label="Name" placehoder="Example Jonh" />
             <Input label="Email" placehoder="Exemple@gmail.com" />
             <Input isPassword label="Password" placehoder="*******" />
@@ -27,7 +34,7 @@ const SignUp = () => {
 
             <Text style={styles.footerText}>
                 Already have an account?
-                <Text style={styles.footerLink}>
+                <Text style={styles.footerLink} onPress={onSignIn}>
                     Sign In
                 </Text>
             </Text>
