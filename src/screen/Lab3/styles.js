@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'blue',
+        backgroundColor: '',
         width: '90%',
         alignSelf: "center",
         marginTop: 20,
@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
     },
     baseText: {
         fontFamily: 'Cochin',
-        color: 'white',
+        color: 'red',
         fontSize: 16,
         marginTop: 10,
     },
