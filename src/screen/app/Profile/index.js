@@ -3,7 +3,7 @@ import React from 'react';
 import { styles } from './styles';
 import { SafeAreaView, ScrollView, Text } from 'react-native';
 
-const Favorites = () => {
+const Profile = () => {
     return (
         <SafeAreaView>
             <ScrollView style={styles.container}>
@@ -16,4 +16,4 @@ const Favorites = () => {
     )
 };
 
-export default React.memo(Favorites);
+export default React.memo(Profile);
