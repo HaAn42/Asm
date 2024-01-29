@@ -6,7 +6,6 @@ const Lab4 = () => {
     return (
         <View>
             <ListCourre></ListCourre>
-
         </View>
     );
 };
