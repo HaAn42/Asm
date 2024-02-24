@@ -3,7 +3,7 @@ import { Alert, View, Text, TouchableOpacity, TextInput, Pressable, Image } from
 import { styles } from './styles';
 
 
-const Input = ({ label, placehoder, isPassword }) => {
+const Input = ({ label, placehoder, isPassword, value, onchangeText }) => {
     const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
     const onEyePress = () => {
@@ -16,6 +16,8 @@ const Input = ({ label, placehoder, isPassword }) => {
             </Text>
             <View style={styles.inputContainer}>
                 <TextInput
+                    value={value}
+                    onChangeText={onchangeText}
                     secureTextEntry={isPassword && !isPasswordVisible}
                     placeholder={placehoder} style={styles.input} />
                 {isPassword ? (

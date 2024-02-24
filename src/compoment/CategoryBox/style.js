@@ -2,6 +2,8 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
     container: {
+        height: 100,
+        marginTop: 13,
         marginHorizontal: 8,
         flexDirection: "column",
         justifyContent: 'center',

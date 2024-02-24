@@ -23,6 +23,10 @@ export const categories = [
         id: 4,
         title: 'Sofa',
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQikEtMhuh1DryBcCktGIA-u560nRFTuqVILw&usqp=CAU',
-    }
+    }, {
+        id: 5,
+        title: 'Bed',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7pXGfz0l_rkFSy8TvWzk4y2DrbQ75SlqY9w&usqp=CAU',
+    },
 ]
 
